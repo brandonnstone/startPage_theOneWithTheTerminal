@@ -21,36 +21,39 @@ time, mark, audio, video {
 }
 
 
-body {
+body {	/*modifies the entire background*/
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	font-size: 11pt;
-	background-color: #BBB4AB;
+	font-size: 10pt;
+	background-color: #F2EEEA;
 }
 
-a {
-	color: #251F1B;
+a {	/*I HAVE NO IDEA WHAT THIS MODIFIES*/
+	color: #858E89;
 	text-decoration: none;
-	border-bottom: 1px solid #251F1B;
+	border-bottom: 1px solid #858E89;
 }
 
-pre, #prompt {
-    color: #C7C1B9;
+pre, #prompt {	/*modifies the name@machine*/
+    color: #F2EFEB;
 }
 
-::selection {
+::selection {	/*I HAVE NO IDEA WHAT THIS MODIFIES*/
 	color: #151515;
     background-color: #D9A010;
 }
 
-pre {
+pre { /*modifies entires, what is after :$*/
+	color: #FFFEFD;
     margin: 0;
     outline: none;
 }
 
-.output {
-    color: #828282;
+.output {	/*modifies output and initial weather*/
+	font-size: 10pt;
+	font-family: "Monaco", monospace;
+    color: #424C50;
 }
 
 #terminal {
@@ -58,20 +61,22 @@ pre {
 	overflow-y: auto;
 	overflow-x: auto;
 	top: -2ex;
-	background-color: #251F1B;
-	color: #A39B8E;
+	background-color: #858E89;
+	color: #424C50;
 	width: 100%;
 	min-height: 100%;
 	max-height: 100%;
 }
 
 .prompt {
-    font-family: monospace;
+	font-size: 10pt;
+    font-family: "Monaco", monospace;
     display: inline;
 	white-space: nowrap;
 }
 
 #input, .input-old {
+	font-family: "Monaco", monospace;
 	display: inline;
 }
 
@@ -82,7 +87,7 @@ pre {
 	margin-right: auto;
 	height: 80%;
 	max-height: 80%;
-	background-color: #251F1B;
+	background-color: #858E89;
 	opacity: .9 ;
 	border-radius: 1px;
 	/*center it vertically*/
@@ -94,7 +99,7 @@ pre {
 #clock, #date {
 	float: right;
 	font-family: monospace;
-	color: gray;
+	color: #424C50;
 	margin-left: 1em;
 }
 
@@ -105,17 +110,18 @@ pre {
 
 /* ==== editor css ======= */
 #editArea {
-	background-color: rgba(1, 1, 1, .2);
-	color: #adadad;
+	background-color: #67746D;
+	color: #858E89;
 	outline: none;
 	resize: none;
 	border: none;
-	font-size: 11pt;
-	font-family: monospace;
+	font-size: 10pt;
+	font-family: "Monaco", monospace;
 }
 
 #filename {
 	float: left;
-	font-family: monospace;
-	color: gray;
+	font-size: 10pt;
+	font-family: "Monaco", monospace;
+	color: #424C50;
 }
